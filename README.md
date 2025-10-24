@@ -8,7 +8,7 @@ This project is a comprehensive brochure-style website for an educational instit
 
 ## Live Demo
 
-[View Live Site on GitHub Pages](https://your-username.github.io/engineering-college/)
+[View Live Site on GitHub Pages](https://assemminsizbayeva.github.io/engineering-college/)
 
 ## Features Implemented
 
