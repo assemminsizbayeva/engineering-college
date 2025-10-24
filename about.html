@@ -1,1 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>
+                Engineering College
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student-life.html">Student Life</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light btn-sm ms-2" href="registration.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-4 fw-bold">Academic Programs</h1>
+                    <p class="lead">Comprehensive engineering education for tomorrow's leaders</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Program Filter -->
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="program-filters">
+                        <button class="btn btn-outline-primary active" data-filter="all">All Programs</button>
+                        <button class="btn btn-outline-primary" data-filter="undergraduate">Undergraduate</button>
+                        <button class="btn btn-outline-primary" data-filter="graduate">Graduate</button>
+                        <button class="btn btn-outline-primary" data-filter="certificate">Certificates</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programs Grid -->
+            <div class="row g-4" id="programs-container">
+                <!-- Computer Engineering -->
+                <div class="col-lg-6" data-category="undergraduate">
+                    <div class="program-card detailed">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-laptop-code fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h4 class="card-title">Computer Engineering</h4>
+                                        <span class="badge bg-primary">BS</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Comprehensive program covering software development, hardware design, artificial intelligence, and computer systems architecture.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-clock me-2"></i>Duration: 4 years</li>
+                                    <li><i class="fas fa-users me-2"></i>Credits: 128</li>
+                                    <li><i class="fas fa-building me-2"></i>Department: Computer Science</li>
+                                </ul>
+                                <div class="program-features">
+                                    <span class="badge bg-light text-dark">AI & Machine Learning</span>
+                                    <span class="badge bg-light text-dark">Cybersecurity</span>
+                                    <span class="badge bg-light text-dark">Software Engineering</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electrical Engineering -->
+                <div class="col-lg-6" data-category="undergraduate">
+                    <div class="program-card detailed">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-bolt fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h4 class="card-title">Electrical Engineering</h4>
+                                        <span class="badge bg-primary">BSEE</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Focus on power systems, electronics, control systems, and renewable energy technologies with hands-on laboratory experience.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-clock me-2"></i>Duration: 4 years</li>
+                                    <li><i class="fas fa-users me-2"></i>Credits: 130</li>
+                                    <li><i class="fas fa-building me-2"></i>Department: Electrical Engineering</li>
+                                </ul>
+                                <div class="program-features">
+                                    <span class="badge bg-light text-dark">Power Systems</span>
+                                    <span class="badge bg-light text-dark">Electronics</span>
+                                    <span class="badge bg-light text-dark">Renewable Energy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanical Engineering -->
+                <div class="col-lg-6" data-category="undergraduate">
+                    <div class="program-card detailed">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-cogs fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h4 class="card-title">Mechanical Engineering</h4>
+                                        <span class="badge bg-primary">BSME</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Comprehensive study of mechanical systems, thermodynamics, materials science, and manufacturing processes.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-clock me-2"></i>Duration: 4 years</li>
+                                    <li><i class="fas fa-users me-2"></i>Credits: 132</li>
+                                    <li><i class="fas fa-building me-2"></i>Department: Mechanical Engineering</li>
+                                </ul>
+                                <div class="program-features">
+                                    <span class="badge bg-light text-dark">Robotics</span>
+                                    <span class="badge bg-light text-dark">Thermodynamics</span>
+                                    <span class="badge bg-light text-dark">CAD/CAM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Civil Engineering -->
+                <div class="col-lg-6" data-category="undergraduate">
+                    <div class="program-card detailed">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-hard-hat fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h4 class="card-title">Civil Engineering</h4>
+                                        <span class="badge bg-primary">BSCE</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Focus on infrastructure design, construction management, environmental engineering, and urban planning.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-clock me-2"></i>Duration: 4 years</li>
+                                    <li><i class="fas fa-users me-2"></i>Credits: 131</li>
+                                    <li><i class="fas fa-building me-2"></i>Department: Civil Engineering</li>
+                                </ul>
+                                <div class="program-features">
+                                    <span class="badge bg-light text-dark">Structural Design</span>
+                                    <span class="badge bg-light text-dark">Transportation</span>
+                                    <span class="badge bg-light text-dark">Environmental</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graduate Programs -->
+                <div class="col-lg-6" data-category="graduate">
+                    <div class="program-card detailed">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-microchip fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h4 class="card-title">Masters in Computer Science</h4>
+                                        <span class="badge bg-success">MS</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Advanced study in computer science with specializations in AI, data science, and software architecture.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-clock me-2"></i>Duration: 2 years</li>
+                                    <li><i class="fas fa-users me-2"></i>Credits: 36</li>
+                                    <li><i class="fas fa-building me-2"></i>Graduate School</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate Programs -->
+                <div class="col-lg-6" data-category="certificate">
+                    <div class="program-card detailed">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-shield-alt fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h4 class="card-title">Cybersecurity Certificate</h4>
+                                        <span class="badge bg-warning">Certificate</span>
+                                    </div>
+                                </div>
+                                <p class="card-text">Specialized training in network security, ethical hacking, and cybersecurity management.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-clock me-2"></i>Duration: 1 year</li>
+                                    <li><i class="fas fa-users me-2"></i>Credits: 18</li>
+                                    <li><i class="fas fa-building me-2"></i>Professional Studies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h3 class="display-4 fw-bold text-primary">2,500+</h3>
+                    <p class="lead">Students Enrolled</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="display-4 fw-bold text-primary">95%</h3>
+                    <p class="lead">Graduation Rate</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="display-4 fw-bold text-primary">150+</h3>
+                    <p class="lead">Faculty Members</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="display-4 fw-bold text-primary">$85K</h3>
+                    <p class="lead">Average Starting Salary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Engineering College</h5>
+                    <p>Shaping the engineers of tomorrow through innovation and excellence.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">Programs</a></li>
+                        <li><a href="admissions.html" class="text-white">Admissions</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Education Lane, Tech City</p>
+                    <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@engineeringcollege.edu</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Engineering College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/interactive-features.js"></script>
+</body>
+</html>
